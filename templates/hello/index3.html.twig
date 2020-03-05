@@ -1,0 +1,15 @@
+
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+  
+        <h1> bonjour </h2>
+        <h1> Les noms </h1>
+
+        <ul>
+            {% for name in names %}
+               <li> {{ name }} </li>
+            {% endfor %}
+        </ul>
+
+         <a href="{{ path('somme',{'x':30,'y':40})}}">Allez à la page somme</a>
+
